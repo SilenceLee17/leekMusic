@@ -10,16 +10,14 @@
 		5B7A89289A309BD80F03A191 /* libPods-musicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C84DD981BFC63A8F53427C /* libPods-musicTests.a */; };
 		784071E4A9CBF6A91A913C05 /* libPods-music.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0F79CB066B716E50AA087 /* libPods-music.a */; };
 		9108FBE13ECDE9A3C9C19856 /* libPods-musicUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F3AB7DCC963FAE1976557 /* libPods-musicUITests.a */; };
+		F38331331CEE133300FF5269 /* LXDSong.m in Sources */ = {isa = PBXBuildFile; fileRef = F38331321CEE133300FF5269 /* LXDSong.m */; };
 		F3D5BBF11CEA0F460018BD54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BBF01CEA0F460018BD54 /* main.m */; };
 		F3D5BBF41CEA0F460018BD54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BBF31CEA0F460018BD54 /* AppDelegate.m */; };
 		F3D5BBF71CEA0F460018BD54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BBF61CEA0F460018BD54 /* ViewController.m */; };
 		F3D5BC4A1CEA15A20018BD54 /* MusicBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC241CEA15A20018BD54 /* MusicBaseViewController.m */; };
 		F3D5BC4B1CEA15A20018BD54 /* MusicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC261CEA15A20018BD54 /* MusicNavigationController.m */; };
-		F3D5BC4C1CEA15A20018BD54 /* LXDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC291CEA15A20018BD54 /* LXDBaseModel.m */; };
 		F3D5BC4D1CEA15A20018BD54 /* LXDEngine+Music.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC2B1CEA15A20018BD54 /* LXDEngine+Music.m */; };
 		F3D5BC4E1CEA15A20018BD54 /* LXDEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC2D1CEA15A20018BD54 /* LXDEngine.m */; };
-		F3D5BC4F1CEA15A20018BD54 /* LXDMusicSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC311CEA15A20018BD54 /* LXDMusicSearch.m */; };
-		F3D5BC501CEA15A20018BD54 /* LXDMusicSongInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC331CEA15A20018BD54 /* LXDMusicSongInfo.m */; };
 		F3D5BC511CEA15A20018BD54 /* MusicEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC371CEA15A20018BD54 /* MusicEngine.m */; };
 		F3D5BC521CEA15A20018BD54 /* NSMutableArray+Music.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC391CEA15A20018BD54 /* NSMutableArray+Music.m */; };
 		F3D5BC531CEA15A20018BD54 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC3B1CEA15A20018BD54 /* NSString+MD5.m */; };
@@ -30,6 +28,9 @@
 		F3D5BC581CEA15A20018BD54 /* MusicSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC461CEA15A20018BD54 /* MusicSearchViewController.m */; };
 		F3D5BC591CEA15A20018BD54 /* MusicSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC491CEA15A20018BD54 /* MusicSearchCell.m */; };
 		F3D5BC5D1CEA17D20018BD54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D5BC5C1CEA17D20018BD54 /* Images.xcassets */; };
+		F3D5BC601CEB57590018BD54 /* LXDMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC5F1CEB57590018BD54 /* LXDMusic.m */; };
+		F3D5BC631CEB59E20018BD54 /* LXDMusicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC621CEB59E20018BD54 /* LXDMusicInfo.m */; };
+		F3D5BC661CEB59FE0018BD54 /* LXDMusicData.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D5BC651CEB59FE0018BD54 /* LXDMusicData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		701BD00914C803792A0E189F /* Pods-musicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-musicTests/Pods-musicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8885E9D29E95F490C76582BE /* Pods-musicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-musicUITests/Pods-musicUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7C84DD981BFC63A8F53427C /* libPods-musicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-musicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38331311CEE133300FF5269 /* LXDSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDSong.h; sourceTree = "<group>"; };
+		F38331321CEE133300FF5269 /* LXDSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDSong.m; sourceTree = "<group>"; };
 		F3D5BBEC1CEA0F460018BD54 /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D5BBF01CEA0F460018BD54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3D5BBF21CEA0F460018BD54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,17 +75,11 @@
 		F3D5BC241CEA15A20018BD54 /* MusicBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicBaseViewController.m; sourceTree = "<group>"; };
 		F3D5BC251CEA15A20018BD54 /* MusicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicNavigationController.h; sourceTree = "<group>"; };
 		F3D5BC261CEA15A20018BD54 /* MusicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicNavigationController.m; sourceTree = "<group>"; };
-		F3D5BC281CEA15A20018BD54 /* LXDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDBaseModel.h; sourceTree = "<group>"; };
-		F3D5BC291CEA15A20018BD54 /* LXDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDBaseModel.m; sourceTree = "<group>"; };
 		F3D5BC2A1CEA15A20018BD54 /* LXDEngine+Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LXDEngine+Music.h"; sourceTree = "<group>"; };
 		F3D5BC2B1CEA15A20018BD54 /* LXDEngine+Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LXDEngine+Music.m"; sourceTree = "<group>"; };
 		F3D5BC2C1CEA15A20018BD54 /* LXDEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDEngine.h; sourceTree = "<group>"; };
 		F3D5BC2D1CEA15A20018BD54 /* LXDEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDEngine.m; sourceTree = "<group>"; };
 		F3D5BC2E1CEA15A20018BD54 /* LXDEngineSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDEngineSDK.h; sourceTree = "<group>"; };
-		F3D5BC301CEA15A20018BD54 /* LXDMusicSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDMusicSearch.h; sourceTree = "<group>"; };
-		F3D5BC311CEA15A20018BD54 /* LXDMusicSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDMusicSearch.m; sourceTree = "<group>"; };
-		F3D5BC321CEA15A20018BD54 /* LXDMusicSongInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDMusicSongInfo.h; sourceTree = "<group>"; };
-		F3D5BC331CEA15A20018BD54 /* LXDMusicSongInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDMusicSongInfo.m; sourceTree = "<group>"; };
 		F3D5BC351CEA15A20018BD54 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		F3D5BC361CEA15A20018BD54 /* MusicEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicEngine.h; sourceTree = "<group>"; };
 		F3D5BC371CEA15A20018BD54 /* MusicEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicEngine.m; sourceTree = "<group>"; };
@@ -104,6 +101,12 @@
 		F3D5BC491CEA15A20018BD54 /* MusicSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicSearchCell.m; sourceTree = "<group>"; };
 		F3D5BC5A1CEA15B50018BD54 /* MusicPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPrefix.pch; sourceTree = "<group>"; };
 		F3D5BC5C1CEA17D20018BD54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F3D5BC5E1CEB57590018BD54 /* LXDMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDMusic.h; sourceTree = "<group>"; };
+		F3D5BC5F1CEB57590018BD54 /* LXDMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDMusic.m; sourceTree = "<group>"; };
+		F3D5BC611CEB59E20018BD54 /* LXDMusicInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDMusicInfo.h; sourceTree = "<group>"; };
+		F3D5BC621CEB59E20018BD54 /* LXDMusicInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDMusicInfo.m; sourceTree = "<group>"; };
+		F3D5BC641CEB59FE0018BD54 /* LXDMusicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDMusicData.h; sourceTree = "<group>"; };
+		F3D5BC651CEB59FE0018BD54 /* LXDMusicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDMusicData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,8 +222,6 @@
 		F3D5BC271CEA15A20018BD54 /* LXDEngineSDK */ = {
 			isa = PBXGroup;
 			children = (
-				F3D5BC281CEA15A20018BD54 /* LXDBaseModel.h */,
-				F3D5BC291CEA15A20018BD54 /* LXDBaseModel.m */,
 				F3D5BC2A1CEA15A20018BD54 /* LXDEngine+Music.h */,
 				F3D5BC2B1CEA15A20018BD54 /* LXDEngine+Music.m */,
 				F3D5BC2C1CEA15A20018BD54 /* LXDEngine.h */,
@@ -234,10 +235,14 @@
 		F3D5BC2F1CEA15A20018BD54 /* LXDMusicModel */ = {
 			isa = PBXGroup;
 			children = (
-				F3D5BC301CEA15A20018BD54 /* LXDMusicSearch.h */,
-				F3D5BC311CEA15A20018BD54 /* LXDMusicSearch.m */,
-				F3D5BC321CEA15A20018BD54 /* LXDMusicSongInfo.h */,
-				F3D5BC331CEA15A20018BD54 /* LXDMusicSongInfo.m */,
+				F3D5BC5E1CEB57590018BD54 /* LXDMusic.h */,
+				F3D5BC5F1CEB57590018BD54 /* LXDMusic.m */,
+				F3D5BC611CEB59E20018BD54 /* LXDMusicInfo.h */,
+				F3D5BC621CEB59E20018BD54 /* LXDMusicInfo.m */,
+				F3D5BC641CEB59FE0018BD54 /* LXDMusicData.h */,
+				F3D5BC651CEB59FE0018BD54 /* LXDMusicData.m */,
+				F38331311CEE133300FF5269 /* LXDSong.h */,
+				F38331321CEE133300FF5269 /* LXDSong.m */,
 			);
 			path = LXDMusicModel;
 			sourceTree = "<group>";
@@ -550,22 +555,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D5BBF71CEA0F460018BD54 /* ViewController.m in Sources */,
-				F3D5BC501CEA15A20018BD54 /* LXDMusicSongInfo.m in Sources */,
 				F3D5BC571CEA15A20018BD54 /* MusicDetailViewController.m in Sources */,
 				F3D5BC551CEA15A20018BD54 /* UIColor+Music.m in Sources */,
+				F3D5BC661CEB59FE0018BD54 /* LXDMusicData.m in Sources */,
 				F3D5BC4B1CEA15A20018BD54 /* MusicNavigationController.m in Sources */,
 				F3D5BC521CEA15A20018BD54 /* NSMutableArray+Music.m in Sources */,
 				F3D5BC591CEA15A20018BD54 /* MusicSearchCell.m in Sources */,
 				F3D5BC511CEA15A20018BD54 /* MusicEngine.m in Sources */,
 				F3D5BBF41CEA0F460018BD54 /* AppDelegate.m in Sources */,
-				F3D5BC4F1CEA15A20018BD54 /* LXDMusicSearch.m in Sources */,
+				F3D5BC601CEB57590018BD54 /* LXDMusic.m in Sources */,
 				F3D5BC531CEA15A20018BD54 /* NSString+MD5.m in Sources */,
-				F3D5BC4C1CEA15A20018BD54 /* LXDBaseModel.m in Sources */,
 				F3D5BC561CEA15A20018BD54 /* UIFont+Music.m in Sources */,
 				F3D5BC4E1CEA15A20018BD54 /* LXDEngine.m in Sources */,
 				F3D5BBF11CEA0F460018BD54 /* main.m in Sources */,
 				F3D5BC541CEA15A20018BD54 /* UIColor+Hex.m in Sources */,
 				F3D5BC4D1CEA15A20018BD54 /* LXDEngine+Music.m in Sources */,
+				F38331331CEE133300FF5269 /* LXDSong.m in Sources */,
+				F3D5BC631CEB59E20018BD54 /* LXDMusicInfo.m in Sources */,
 				F3D5BC581CEA15A20018BD54 /* MusicSearchViewController.m in Sources */,
 				F3D5BC4A1CEA15A20018BD54 /* MusicBaseViewController.m in Sources */,
 			);

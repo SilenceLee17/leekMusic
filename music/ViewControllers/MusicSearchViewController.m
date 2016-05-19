@@ -16,7 +16,7 @@ static NSString *const kSearchReuseIdentifier = @"searchCellIdentifier";
 @interface MusicSearchViewController () <UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchBar *searchBar;
-@property (nonatomic, strong) LXDMusicSearch *musicSearch;
+@property (nonatomic, strong) LXDMusic *musicSearch;
 
 
 @end
@@ -74,14 +74,14 @@ static NSString *const kSearchReuseIdentifier = @"searchCellIdentifier";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _musicSearch.info.count;
+    return _musicSearch.data.info.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MusicSearchCell *cell = [tableView dequeueReusableCellWithIdentifier:kSearchReuseIdentifier forIndexPath:indexPath];
-    if (indexPath.row >= 0&&indexPath.row < _musicSearch.info.count) {
-        LXDMusicSong *song=_musicSearch.info[indexPath.row];
+    if (indexPath.row >= 0&&indexPath.row < _musicSearch.data.info.count) {
+        LXDMusicInfo *song=_musicSearch.data.info[indexPath.row];
         [cell setName:song.filename];
     }
 
@@ -97,9 +97,9 @@ static NSString *const kSearchReuseIdentifier = @"searchCellIdentifier";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row >= 0&&indexPath.row < _musicSearch.info.count) {
+    if (indexPath.row >= 0&&indexPath.row < _musicSearch.data.info.count) {
 
-        MusicDetailViewController *vc=[[MusicDetailViewController alloc] initWithSongArray:_musicSearch.info index:indexPath.row];
+        MusicDetailViewController *vc=[[MusicDetailViewController alloc] initWithSongArray:_musicSearch.data.info index:indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
@@ -107,7 +107,7 @@ static NSString *const kSearchReuseIdentifier = @"searchCellIdentifier";
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
  NSLog(@"searchBarSearchButtonClicked is %@",searchBar.text);
     [[LXDEngine sharedEngine] getSearchListWithKeyWord:searchBar.text
-                                               success:^(LXDMusicSearch *musicSearch){
+                                               success:^(LXDMusic *musicSearch){
                                                    _musicSearch=musicSearch;
                                                    [self.tableView reloadData];
                                                    [_searchBar resignFirstResponder];

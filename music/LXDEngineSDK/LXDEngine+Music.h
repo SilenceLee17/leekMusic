@@ -7,13 +7,13 @@
 //
 
 #import "LXDEngine.h"
-#import "LXDMusicSearch.h"
-#import "LXDMusicSongInfo.h"
+#import "LXDMusic.h"
+#import "LXDSong.h"
 @interface LXDEngine (Music)
 -(void)getSearchListWithKeyWord:(NSString *) keyWord
-                        success:(void (^)(LXDMusicSearch *musicSearch))success
+                        success:(void (^)(LXDMusic *musicSearch))success
                         failure:(FailureBlock)failure;
 -(void)getSongWithHash:(NSString *) hash
-                        success:(void (^)(LXDMusicSongInfo *song))success
+                        success:(void (^)(LXDSong *song))success
                         failure:(FailureBlock)failure;
 @end

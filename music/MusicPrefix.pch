@@ -21,4 +21,6 @@
 #import "Constants.h"
 
 #import "LXDEngineSDK.h"
+
+#import "MJExtension.h"
 #endif

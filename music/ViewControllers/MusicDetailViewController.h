@@ -9,5 +9,5 @@
 #import "MusicBaseViewController.h"
 
 @interface MusicDetailViewController : MusicBaseViewController
--(instancetype)initWithSongArray:(NSMutableArray *)songArray index:(NSInteger)index;
+-(instancetype)initWithSongArray:(NSArray *)songArray index:(NSInteger)index;
 @end

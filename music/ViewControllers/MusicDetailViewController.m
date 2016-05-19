@@ -15,9 +15,9 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 @interface MusicDetailViewController ()
 @property(nonatomic,strong)NSString *name;
 @property(nonatomic,strong)NSString *hashString;
-@property(nonatomic,strong)LXDMusicSongInfo *songInfo;
+@property(nonatomic,strong)LXDSong *songInfo;
 @property(nonatomic,strong)UIButton  *playOrStopButton;
-@property(nonatomic,strong)NSMutableArray  *songArray;
+@property(nonatomic,strong)NSArray  *songArray;
 @property(nonatomic,assign)NSInteger  currentIndex;
 @end
 
@@ -25,7 +25,7 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 @implementation MusicDetailViewController
 
 
--(instancetype)initWithSongArray:(NSMutableArray *)songArray index:(NSInteger)index{
+-(instancetype)initWithSongArray:(NSArray *)songArray index:(NSInteger)index{
     self = [super init];
     if (self) {
         self.songArray=songArray;
@@ -33,9 +33,9 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
         if (self.currentIndex < 0 ||self.currentIndex >= self.songArray.count) {
             self.currentIndex=0;
         }
-         LXDMusicSong *song=[_songArray objectAtIndex:_currentIndex];
+         LXDMusicInfo *song=[_songArray objectAtIndex:_currentIndex];
         _name=song.filename;
-        _hashString=song.musicHash;
+        _hashString=song.infoHash;
     }
     return self;
 }
@@ -97,7 +97,7 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 }
 
 -(void)getSongInfomation{
-    [[LXDEngine sharedEngine] getSongWithHash:_hashString success:^(LXDMusicSongInfo *song) {
+    [[LXDEngine sharedEngine] getSongWithHash:_hashString success:^(LXDSong *song) {
         _songInfo=song;
         [self playOrPauseStreamer:_songInfo];
     } failure:^(NSInteger statusCode, NSError *error) {
@@ -109,9 +109,9 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     if (self.currentIndex < 0 ||self.currentIndex >= self.songArray.count) {
         self.currentIndex=0;
     }
-    LXDMusicSong *song=[_songArray objectAtIndex:_currentIndex];
+    LXDMusicInfo *song=[_songArray objectAtIndex:_currentIndex];
     _name=song.filename;
-    _hashString=song.musicHash;
+    _hashString=song.infoHash;
     self.navigationItem.title=_name;
     [self getSongInfomation];
 }
@@ -124,13 +124,13 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     if (self.currentIndex < 0 ||self.currentIndex >= self.songArray.count) {
         self.currentIndex=self.songArray.count-1;
     }
-    LXDMusicSong *song=[_songArray objectAtIndex:_currentIndex];
+    LXDMusicInfo *song=[_songArray objectAtIndex:_currentIndex];
     _name=song.filename;
-    _hashString=song.musicHash;
+    _hashString=song.infoHash;
     self.navigationItem.title=_name;
     [self getSongInfomation];
 }
-- (void)playOrPauseStreamer:(LXDMusicSongInfo *)songInfo
+- (void)playOrPauseStreamer:(LXDSong *)songInfo
 {
     MusicEngine *musicEngine=[MusicEngine sharedMusicEngine];
     [musicEngine play:songInfo];
