@@ -47,6 +47,11 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     [self getSongInfomation];
 
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 -(void)setupSubviews{
 
     self.navigationItem.title=_name;

@@ -80,5 +80,12 @@
 {
     return [UIColor colorWithHex:0xe6e6e6];
 }
-
++ (UIColor *)randomColor
+{
+    CGFloat red   = (arc4random() % 256)/255.0;
+    CGFloat green = (arc4random() % 256)/255.0;
+    CGFloat blue  = (arc4random() % 256)/255.0;
+    CGFloat alpha = 1.0f;
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
 @end

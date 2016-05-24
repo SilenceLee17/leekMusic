@@ -11,7 +11,7 @@ target 'music' do
   pod 'Masonry', '~> 0.6.2'
   pod 'DOUAudioStreamer', '~> 0.2.10'
   pod 'MJExtension', '~> 3.0.7'
-
+  pod 'DBSphereTagCloud', '~> 1.0.0' 
   target 'musicTests' do
     inherit! :search_paths
     # Pods for testing

@@ -27,6 +27,6 @@
 + (UIColor *)buttonColor;
 + (UIColor *)buttonDownColor;
 + (UIColor *)disableButtonColor;
-
++ (UIColor *)randomColor;
 
 @end
